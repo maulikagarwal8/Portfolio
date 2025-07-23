@@ -21,14 +21,21 @@
   
   <body>
     <header class="header">
-      <nav>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+      <nav class="navbar">
+        <div class="navbar-container">
+          <ul class="navbar-menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
       </nav>
       <div class="container">
         <div class="header-textbox">
@@ -49,6 +56,41 @@
     </header>
 
     <main>
+      <section class="experience-section">
+        <div class="container" id="experience">
+          <h2 class="section-title">Experience & Internships</h2>
+          <div class="experience-list">
+            <div class="experience-card">
+              <div class="exp-header">
+                <h3 class="exp-role">Data Engineering Intern</h3>
+                <span class="exp-company">@ Celebal Technologies</span>
+              </div>
+              <p class="exp-period">June 2025 - July 2025</p>
+              <p class="exp-period">Skills: Python,SQL,Azure</p>
+              <ul class="exp-details">
+                <li>Developed a project which involved establishing connectivity to a SQL Server Database using Python which is
+hosted remotely on internet or on cloud.</li>
+                <li>Includes features such as authentication of user,logging,UI interface and ability to support CRUD operations.</li>
+              </ul>
+            </div>
+            <div class="experience-card">
+              <div class="exp-header">
+                <h3 class="exp-role">AI Developer Intern</h3>
+                <span class="exp-company">@ Bolt-IOT Inventrom Pvt Ltd.</span>
+              </div>
+              <p class="exp-period">April 2024 - May 2024</p>
+              <p class="exp-period">Skills: Python,AI</p>
+              <ul class="exp-details">
+                <li>Developed AI based Educational Course Content Generator using OpenAI software.</li>
+                <li>It generates content based on prompts given by the user which involves Flask-Python Framework for
+handling frontend and backend of the website.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
       <section class="work">
         <div class="container">
           <h2 class="h2" id="projects">Projects</h2>
@@ -133,6 +175,47 @@
                 <img loading="lazy" src="./assets/image_gen_pic.png" alt="Project Template Screenshot">
               </picture>
             </div>
+            <div class="work-box">
+              <div class="work-textbox">
+                <h3 class="h3">Flower Recognizer using CNN</h3>
+                <p class="work-text">An ml model leveraging benefits of CNN to recognize any valid image of flower uploaded by user on the webpage.Webpage is made using gradio.</p>
+                <ol class="work-technologies">
+                  <li>Python</li>
+                  <li>AI</li>
+                  <li>ML</li>
+                </ol>
+                <div class="work-links">
+                  <a href="https://github.com/maulikagarwal8/Any-Flower-Recognizer-using-CNN" target="_blank" rel="noopener" class="link">Explore this project</a>
+                  <a href="https://github.com/maulikagarwal8/Any-Flower-Recognizer-using-CNN" target="_blank" rel="noopener" title="Source code">
+                    <img src="./assets/Github_pic.png" alt="GitHub" loading="lazy">
+                  </a>
+                </div>
+              </div>
+              <picture class="work-img">
+                <img loading="lazy" src="./assets/ml_model.jpeg" alt="Project Template Screenshot" height="500px" width="400px">
+              </picture>
+            </div>
+            <div class="work-box">
+              <div class="work-textbox">
+                <h3 class="h3">Smart-Watch-using-ESP32-Microcontroller</h3>
+                <p class="work-text">This project involves the design and development of a smart watch built using the ESP-32 microcontroller, specifically tailored to assist elderly individuals in monitoring their health and safety.The device integrates multiple sensors and features to provide comprehensive real-time tracking of vital parameters and daily activities.</p>
+                <ol class="work-technologies">
+                  <li>C++</li>
+                  <li>Arduino</li>
+                  <li>Interfacing</li>
+                  <li>Networking</li>
+                </ol>
+                <div class="work-links">
+                  <a href="https://github.com/maulikagarwal8/Smart-Watch-using-ESP32-Microcontroller" target="_blank" rel="noopener" class="link">Explore this project</a>
+                  <a href="https://github.com/maulikagarwal8/Smart-Watch-using-ESP32-Microcontroller" target="_blank" rel="noopener" title="Source code">
+                    <img src="./assets/Github_pic.png" alt="GitHub" loading="lazy">
+                  </a>
+                </div>
+              </div>
+              <picture class="work-img">
+                <img loading="lazy" src="./assets/Circuit_Diagram.jpeg" alt="Project Template Screenshot" height="300px" width="300px">
+              </picture>
+            </div>
           </div>
         </div>
       </section>
@@ -143,12 +226,17 @@
           <div class="skills-imgs">
             <img src="./assets/c++_pic.png" alt="C++" loading="lazy" title="C++">
             <img src="./assets/Cpic.png" alt="C" loading="lazy" title="C">
+            <img src="./assets/Azure.png" alt="Azure" loading="lazy" title="Azure">
+            <img src="./assets/MongoDB.png" alt="MongoDB" loading="lazy" title="MongoDB">
+            <img src="./assets/ai-mlpng.png" alt="AI-ML" loading="lazy" title="AI-ML">
+            <img src="./assets/arduino.png" alt="Arduino" loading="lazy" title="Arduino">
+            <img src="./assets/Flask.png" alt="Flask" loading="lazy" title="Flask">
             <img src="./assets/python_pic.png" alt="Python" loading="lazy" title="Python">
             <img src="./assets/html_pic.png" alt="HTML" loading="lazy" title="HTML">
             <img src="./assets/js_pic.png" alt="JavaScript" loading="lazy" title="JavaScript">
-            <img src="./assets/css_pic.png" alt="CSS" loading="lazy" title="CSS" width="20px">
+            <img src="./assets/css_pic.png" alt="CSS" loading="lazy" title="CSS" width="5px">
             <img src="./assets/git_pic.png" alt="Git" loading="lazy" title="Git">
-            <img src="./assets/pytorch_pic.png" alt="Pytorch" loading="lazy" title="Pytorch" width="120px">
+            <img src="./assets/pytorch_pic.png" alt="Pytorch" loading="lazy" title="Pytorch">
             <img src="./assets/sql_pic.png" alt="MySQL" loading="lazy" title="MySQL">
           </div>
         </div>
@@ -156,11 +244,13 @@
 
       <section class="contact">
         <div class="container">
-          <h2 class="h2" id="contact">Send Message</h2>
+          <h2 class="h2" id="contact">Send Message/Email at</h2>
+          <h3 class="'h4" align="center">maulikagarwal8024@gmail.com</h3>
           <div class="contact-content">
             <p class="contact-text">
               As a software engineer, I develop softwares and design systems with a passion for reliability and performance.
             </p>
+            <p>Currently Form is not working.Sorry for inconvenience</p>
             <form action="" class="contact-form">
               <div class="form-field">
                 <label for="name">Name</label>
@@ -187,7 +277,10 @@
           <nav>
             <ol class="footer-links">
               <li><a href="https://github.com/maulikagarwal8" target="_blank" rel="noopener" title="GitHub"><img src="./assets/Github_pic.png" alt="GitHub"></a></li>
-              <li><a href="" target="_blank" rel="noopener" title="LinkedIn"><img src="./assets/linkedin_pic.png" alt="LinkedIn"></a></li>
+              <li><a href="https://linkedin.com/in/maulik-agarwal-039b73297" target="_blank" rel="noopener" title="LinkedIn"><img src="./assets/linkedin_pic.png" alt="LinkedIn"></a></li>
+              <li><a href="https://codeforces.com/profile/Maulik_Agarwal" target="_blank" rel="noopener" title="Codeforces"><img src="./assets/codeforces.jpg" alt="Codeforces"></a></li>
+              <li><a href="https://leetcode.com/u/maulik_agarwal/" target="_blank" rel="noopener" title="Leetcode"><img src="./assets/LeetCode.png" alt="Leetcode"></a></li>
+              <li><a href="https://www.codechef.com/users/maulikagarwal8" target="_blank" rel="noopener" title="Codechef"><img src="./assets/Codechef.jpeg" alt="Codechef"></a></li>
             </ol>
           </nav>
           <p class="footer-text">© Designed &amp; developed by Maulik Agarwal</p>
